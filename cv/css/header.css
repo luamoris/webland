@@ -30,11 +30,13 @@ header: #353535
 /* Логотип */
 
 .logo {
+	position: relative;
     min-width: 50px;
     min-height: 50px;
 }
 
 .logo img {
+	position: absolute;
     width: 100%;
     height: 100%;
 }
