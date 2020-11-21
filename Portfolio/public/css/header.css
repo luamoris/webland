@@ -1,0 +1,108 @@
+/* HEADER */
+
+
+/*
+
+header: #353535
+главный желтый цвет: #FFDB93
+
+
+*/
+
+
+/* Шапка */
+
+.header {
+    background-color: #353535;
+}
+
+
+/* Контент внутри шапки */
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+
+/* Логотип */
+
+.logo {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Меню */
+
+.header__menu {}
+
+
+/* Размер для иконок */
+
+.icons {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Бургер меню и Информационная иконка */
+
+.menu__burger,
+.menu__info {
+    display: none;
+}
+
+.menu__burger img
+.menu__info img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Обычное (лист) меню */
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list li {
+    list-style: none;
+    margin: 0 0 0 15px;
+}
+
+.menu__link {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.menu__link .icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #FFDB93;
+}
+
+
+/* Media */
+
+@media (max-width:768px) {
+    .menu__list {
+        display: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .menu__burger,
+    .menu__info {
+        display: block;
+    }
+}

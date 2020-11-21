@@ -1,0 +1,24 @@
+/* MAIN */
+
+@import "header.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	min-width: 190px;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.conteiner {
+    max-width: 1840px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+}
