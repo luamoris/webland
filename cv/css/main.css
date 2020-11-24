@@ -13,6 +13,7 @@
 
 @import "header.css";
 @import "space.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,500&display=swap');
 
 /* end */
 
@@ -22,12 +23,41 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     /* Убираем синие выдиление фона при клике на тег a*/
     -webkit-tap-highlight-color: transparent;
 }
 
+
+/* Fons */
+
+::-webkit-input-placeholder {
+    color: rgba(244, 197, 179, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    color: rgb(244, 197, 179, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    color: rgb(244, 197, 179, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+:-moz-placeholder {
+    color: rgb(244, 197, 179, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
 /* Контейнер всего контента*/
+
 .wrapper {
     display: flex;
     min-height: 100%;
@@ -35,7 +65,9 @@
     flex-direction: column;
 }
 
+
 /* Контейнер рамок */
+
 .conteiner {
     max-width: 1840px;
     min-width: 210px;
@@ -44,8 +76,8 @@
 }
 
 
-
 /* Убрать скроллбар с страницы, но оставить возможность прокрутки */
+
 
 /* ::-webkit-scrollbar {
     width: 0px;

@@ -11,9 +11,9 @@ function scrollProgress() {
 
 const body = document.querySelector("body");
 const burger = document.querySelector("#burger");
-const headerMenu = document.querySelector(".header__menu");
+const curtainMenu = document.querySelector(".menu__curtain");
 burger.onclick = () => {
 	burger.classList.toggle('active');
-	headerMenu.classList.toggle('active');
+	curtainMenu.classList.toggle('active');
 	body.classList.toggle('lock');
 };
