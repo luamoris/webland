@@ -1,9 +1,21 @@
 /* MAIN */
 
 
-/* Import particles css file */
+/* Settings
+
+Основной цвет (темный): #1C1B21
+Основной цвет (светлый): #F77947
+
+*/
+
+
+/* Import */
 
 @import "header.css";
+@import "space.css";
+
+/* end */
+
 
 /* Настройки страницы */
 
@@ -11,66 +23,36 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    /* Убираем синие выдиление фона при клике на тег a*/
+    -webkit-tap-highlight-color: transparent;
 }
 
-::-webkit-scrollbar {
-    /* chrome based */
-    width: 0px;
-    /* ширина scrollbar'a */
-    background: transparent;
-    /* опционально */
-}
-
-html {
-    /* IE 10+ */
-    -ms-overflow-style: none;
-    /* Firefox */
-    scrollbar-width: none;
-}
-
+/* Контейнер всего контента*/
 .wrapper {
     display: flex;
     min-height: 100%;
-    min-width: 190px;
     overflow: hidden;
     flex-direction: column;
 }
 
+/* Контейнер рамок */
 .conteiner {
     max-width: 1840px;
+    min-width: 210px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
 }
 
-.workspace {
-    background-color: #383838;
+
+
+/* Убрать скроллбар с страницы, но оставить возможность прокрутки */
+
+/* ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
-.workspace__content {
-    position: relative;
-    height: 100vh;
-}
-
-.workspace__content .color__linear {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(255, 219, 147, 0.08) 0%, rgba(255, 219, 147, 0) 100%);
-}
-
-.workspace__content .color__dots {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 219, 147, 0.02), rgba(255, 219, 147, 0.02) 2px, transparent 0px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(255, 219, 147, 0.02), rgba(255, 219, 147, 0.02) 2px, transparent 0px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(255, 219, 147, 0.02), rgba(255, 219, 147, 0.02) 2px, transparent 0px, transparent 100%);
-    background-image: repeating-radial-gradient(center center, rgba(255, 219, 147, 0.02), rgba(255, 219, 147, 0.02) 2px, transparent 0px, transparent 100%);
-    -webkit-background-size: 25px 25px;
-    -moz-background-size: 25px 25px;
-    background-size: 25px 25px;
-}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */

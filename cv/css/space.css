@@ -1,0 +1,48 @@
+/* SPACE */
+
+
+/*===============================================================
+
+Settings Space
+
+Основной цвет (темный): #1C1B21
+Основной цвет (светлый): #F77947
+
+=================================================================*/
+
+.space {
+    width: 100%;
+    padding-top: 75px;
+    background-color: white;
+}
+
+.space .conteiner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.space__content {
+	/* height: 200vh; */
+	margin-bottom: 100vh;
+}
+
+
+
+
+.space__content p {
+	color: grey;
+	font-size: 16px;
+}
+
+
+/*=================================================================*/
+
+
+/* Adaptive layout */
+
+@media (max-width:768px) {
+    .space {
+        padding-top: 65px;
+    }
+}

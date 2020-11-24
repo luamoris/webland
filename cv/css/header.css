@@ -1,48 +1,45 @@
 /* HEADER */
 
 
-/*
+/*===============================================================
 
-header: #353535
-главный желтый цвет: #FFDB93
-цвет фона: #383838
+Settings Header
 
+Основной цвет (темный): #1C1B21
+Основной цвет (светлый): #F77947
 
-*/
+Фон прогресс бара: #49494D
+Полоса прогресс бара: #F77947
 
+Цвет фон бургер меню: #27262C
 
-/* Шапка */
+=================================================================*/
 
 .header {
     position: fixed;
     width: 100%;
-    z-index: 100;
-    background-color: #353535;
+    background-color: #1C1B21;
 }
 
 
-/* Progress Bar */
-
-
-/* The progress container (grey background) */
+/* Progress Scroll */
 
 .progress__container {
     width: 100%;
     height: 2px;
-    background: #353535;
+    background: #49494D;
 }
-
-
-/* The progress bar (scroll indicator) */
 
 .progress__bar {
     height: 2px;
-    background: #FFDB93;
+    background: #F77947;
     width: 0%;
 }
 
 
-/* Контент внутри шапки */
+/*===============================================================
+Header content
+=================================================================*/
 
 .header__content {
     display: flex;
@@ -52,71 +49,65 @@ header: #353535
 }
 
 
-/* Логотип */
+/*=================================================================*/
 
-.logo {
-    position: relative;
+
+/* Контейнеры для иконок */
+
+.icon-50 {
     min-width: 50px;
     min-height: 50px;
 }
 
-.logo img {
+.icon-40 {
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.icon-40,
+.icon-50 {
+    position: relative;
+}
+
+.icon-40 img,
+.icon-50 img {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
+.icon-40 .circle,
+.icon-50 .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F77947;
+}
 
-/* Меню */
+
+/*=================================================================*/
+
+
+/* Header menu */
 
 .header__menu {}
 
-
-/* Размер для иконок */
-
-.icons {
-    width: 40px;
-    height: 40px;
-}
-
-
-/* Бургер меню и Информационная иконка */
-
-.menu__burger {
-    background-image: url("./../img/svg/icon_\ burger_menu.svg");
-}
-
-.menu__burger:active {
-    background-image: url("./../img/svg/icon_burger_menu\ _\ active.svg");
+#burger,
+#avatar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 300ms ease 0s;
 }
 
 .menu__burger,
-.menu__info {
+.menu__avatar {
     display: none;
 }
 
-.menu__burger img,
-.menu__info img {
-    width: 100%;
-    height: 100%;
-}
 
-
-/* Бургер меню отклик*/
-
-
-/* .menu__burger object {
-    width: 100%;
-    height: 100%;
-} */
-
-
-/* .menu__burger:active object svg rect {
-    fill: #353535;
-} */
-
-
-/* Обычное (лист) меню */
+/* Menu list (ul>li) */
 
 .menu__list {
     display: flex;
@@ -133,25 +124,86 @@ header: #353535
     display: block;
 }
 
-.menu__link .icon {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #FFDB93;
-}
+
+/*=================================================================*/
 
 
-/* Media */
+/* Adaptive layout */
 
 @media (max-width:768px) {
+    body.lock {
+        overflow: hidden;
+    }
     .menu__list {
         display: none;
     }
+    .header__content {
+        height: 50px;
+    }
     .logo {
         margin: 0 auto;
+        z-index: 21;
+    }
+    .logo.icon-50 {
+        min-width: 40px;
+        min-height: 40px;
     }
     .menu__burger,
-    .menu__info {
+    .menu__avatar {
         display: block;
+        z-index: 21;
+    }
+	.progress__container {
+		position: relative;
+		z-index: 21;
+	}
+	 #burger {
+        background-image: url("./../img/svg/burger_menu.svg");
+    }
+    #burger.active {
+        background-image: url("./../img/svg/burger_menu_active.svg");
+    }
+    #avatar {
+        background-image: url("./../img/svg/avatar.svg");
+    }
+    #burger::before,
+    #avatar::before {
+        content: '';
+        height: 50px;
+        width: 1px;
+        background-color: rgba(247, 121, 71, 0.1);
+        ;
+        position: absolute;
+        top: -5px;
+    }
+    #burger::before {
+        left: -16px;
+    }
+    #avatar::before {
+        right: -16px;
+    }
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1C1B21;
+        z-index: 20;
+    }
+    .header__menu {
+        position: fixed;
+        top: -115%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #27262C;
+        padding: 80px 0 0 0;
+        overflow: auto;
+        transition: all 300ms ease 0s;
+    }
+    .header__menu.active {
+        top: 0;
     }
 }
