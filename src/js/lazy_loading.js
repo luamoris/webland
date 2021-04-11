@@ -13,7 +13,9 @@ async function getContent() {
 			`<div class="_loading-icon"></div>`);
 	}
 	loadMore.classList.add('_loading');
-	const res = await fetch('../content/more.html', { method: 'GET' });
+	const res = await fetch('https://raw.githubusercontent.com/luamoris/webland/main/content/more.html', {
+		method: 'GET',
+	});
 	if (res.ok) {
 		const result = await res.text();
 		loadMore.insertAdjacentHTML('beforeend', result);
