@@ -1,4 +1,8 @@
-// .gitignore
+# Ignore folders
+/node_modules
+/build
+/dist
+/.idea
 
 # Prerequisites
 *.d
