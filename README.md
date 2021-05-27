@@ -6,10 +6,10 @@
 ### Links
 
 > + [Source Code][sourse-code]
-> + Live Site [`iosig.fun`][iosig.fun]
+> + [Live Site][live-site]
 
 [sourse-code]: https://github.com/luamoris/webland
-[iosig.fun]: https://iosif.fun/
+[live-site]: https://luamoris.github.io/webland/
 
 
 

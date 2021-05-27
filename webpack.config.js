@@ -64,7 +64,7 @@ const PATH = {
 const TEST = {
 	SCSS: /\.s[ac]ss$/,
 	IMG: /\.(png|jpe?g|svg|gif)$/,
-	FONTS: /\.(woff|woff2|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+	FONTS: /\.(woff|woff2|otf|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
 	JS: /\.js$/,
 };
 
