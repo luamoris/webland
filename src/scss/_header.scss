@@ -1,0 +1,129 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER */
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+
+	// .header__container
+	&__container {
+		margin: 0 auto;
+		padding: 16px 32px;
+		max-width: 1270px;
+	}
+
+	// .header__body
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		height: 50px;
+	}
+}
+
+.logo {
+	margin-right: 40px;
+
+	// .logo__picture
+	&__picture {
+		width: 60px;
+		height: 60px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.menu {
+	height: 100%;
+
+	// .menu__list
+	&__list {
+		display: flex;
+		height: 100%;
+	}
+
+	// .menu__item
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 10px;
+		height: 100%;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		height: 20px;
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: var(--menu-text);
+		cursor: pointer;
+	}
+}
+
+@media (min-width: 1024px) {
+	// .menu_sub
+	.menu {
+		&_sub_one {
+			position: relative;
+
+			.menu__link {
+				&::after {
+					content: "";
+					display: inline-block;
+					margin-left: 5px;
+					width: 15px;
+					height: 100%;
+					background: var(--btn-sub-menu) center center/15px auto no-repeat;
+				}
+
+				&:hover {
+					~ .sub-menu {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		position: absolute;
+		left: 5px;
+		top: 25px;
+		display: block;
+	}
+
+	.sub-menu_one {
+		.sub-menu__list {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			border-radius: 5px;
+			padding: 15px 10px;
+			box-shadow: 0 4px 4px var(--sub-menu-shadow);
+			background: var(--bg);
+		}
+
+		.sub-menu__item {
+			display: flex;
+			flex: 0 0 24px;
+			align-items: center;
+			width: 100px;
+		}
+
+		.sub-menu__link {
+			font-weight: 600;
+			font-size: 12px;
+			text-transform: capitalize;
+			color: var(--sub-menu-text);
+		}
+	}
+}
