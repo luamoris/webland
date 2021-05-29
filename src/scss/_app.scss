@@ -11,6 +11,7 @@
 	--selection: rgba(0, 0, 0, 0.05);
 
 	// header
+	--header-line: linear-gradient(0deg, #faf1e0, #fff, #fff);
 	--menu-text: #695d4f;
 	--sub-menu-text: #8c8c8c;
 	--sub-menu-item-bg: rgba(105, 93, 79, 0.1);
@@ -18,10 +19,40 @@
 
 	// label
 	--label-orange-bg: rgba(231, 187, 101, 0.2);
+	--label-orange-bg-hover: rgba(231, 187, 101, 0.1);
 	--label-orange-text: rgba(231, 187, 101, 1);
+
+	// section
+	--topic-title: #877d72;
 
 	// footer
 	--footer-text: #c4c4c4;
+
+	// button
+	--btn-orange-bg: #faf1e0;
+	--btn-orange-text: #e7bb65;
+
+	// skill
+	--skill-chapter-blue-bg: rgba(43, 65, 88, 0.1);
+	--skill-chapter-blue-text: rgba(43, 65, 88, 0.8);
+	--skill-chapter-orange-bg: rgba(255, 136, 77, 0.1);
+	--skill-chapter-orange-text: rgba(255, 136, 77, 0.8);
+
+	// skill item bar
+	--skill-item-bar: rgba(0, 0, 0, 0.1);
+
+	// skill item blue
+	--skill-item-blue-bg: rgba(244, 245, 247, 1);
+	--skill-item-blue-text: rgba(140, 140, 140, 1);
+	--skill-item-blue-progress: rgba(81, 99, 118, 0.7);
+
+	// skill item orange
+	--skill-item-orange-bg: rgba(251, 236, 208, 1);
+	--skill-item-orange-text: rgba(106, 84, 63, 0.8);
+	--skill-item-orange-progress: rgba(233, 166, 72, 0.7);
+
+	// works item
+	--works-item-bg: rgba(247, 221, 170, 1);
 
 	// img
 	--btn-sub-menu: url("../img/menu/btn_sub_menu.svg");

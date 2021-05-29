@@ -28,3 +28,17 @@ btnBurger.addEventListener('click', () => {
 	btnBurger.classList.toggle('active');
 	btnBurger.parentElement.classList.toggle('burger_open');
 });
+
+// HEADER
+const header = document.getElementById('header');
+
+let scrollCurrent = 0;
+const HeaderScrollEffect = () => {
+	const scrolled = window.scrollY;
+	scrolled > 100 && scrolled > scrollCurrent
+		? header.classList.add("_out")
+		: header.classList.remove("_out");
+	scrollCurrent = scrolled;
+};
+
+window.addEventListener("scroll", HeaderScrollEffect);

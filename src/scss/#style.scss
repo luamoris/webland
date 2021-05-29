@@ -4,6 +4,9 @@
 @import "fonts";
 @import "icons";
 
+// ========================================================= MIXIN
+@import "mixin";
+
 /* ======================================================================================
 	NORMALIZE
 ========================================================================================= */
@@ -16,4 +19,8 @@
 @import "header";
 @import "content";
 @import "./sections/home";
+@import "./sections/about";
+@import "./sections/slider";
+@import "./sections/skills";
+@import "./sections/works";
 @import "footer";

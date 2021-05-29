@@ -15,7 +15,7 @@
 <div id="wrapper">
 
 	<!-- HEADER -->
-	<header class="header">
+	<header class="header" id="header">
 		<div class="header__container">
 			<div class="header__body">
 
@@ -33,28 +33,28 @@
 					<!-- MENU BOX -->
 					<div class="menu__box">
 						<div class="menu__container">
-							<div class="menu__content">
+							<nav class="menu__content">
 								<ul class="menu__list">
 									<!-- HOME -->
 									<li class="menu__item menu_sub_one">
 										<div class="menu_sub_box">
-											<a href="/#" class="menu__link">home</a>
+											<a href="#home" class="menu__link">home</a>
 											<span class="menu__arrow"></span>
 										</div>
 										<!-- SUB HOME -->
 										<div class="sub-menu sub-menu_one">
 											<ul class="sub-menu__list">
 												<li class="sub-menu__item">
-													<a href="/#about" class="sub-menu__link">about me</a>
+													<a href="#about" class="sub-menu__link">about me</a>
 												</li>
 												<li class="sub-menu__item">
-													<a href="/#skills" class="sub-menu__link">skills</a>
+													<a href="#skills" class="sub-menu__link">skills</a>
 												</li>
+												<!-- <li class="sub-menu__item">
+													<a href="#experience" class="sub-menu__link">experience</a>
+												</li> -->
 												<li class="sub-menu__item">
-													<a href="/#experience" class="sub-menu__link">experience</a>
-												</li>
-												<li class="sub-menu__item">
-													<a href="/#works" class="sub-menu__link">works</a>
+													<a href="#works" class="sub-menu__link">works</a>
 												</li>
 											</ul>
 										</div>
@@ -62,37 +62,37 @@
 									<!-- BLOG -->
 									<li class="menu__item menu_sub_one">
 										<div class="menu_sub_box">
-											<a href="/blog" class="menu__link">blog</a>
+											<a href="#languages" class="menu__link">blog</a>
 											<span class="menu__arrow"></span>
 										</div>
 										<!-- SUB BLOG -->
 										<div class="sub-menu sub-menu_one">
 											<ul class="sub-menu__list">
 												<li class="sub-menu__item">
-													<a href="/blog#languages" class="sub-menu__link">languages</a>
+													<a href="#languages" class="sub-menu__link">languages</a>
+												</li>
+												<!-- <li class="sub-menu__item">
+													<a href="#technologies" class="sub-menu__link">technologies</a>
 												</li>
 												<li class="sub-menu__item">
-													<a href="/blog#technologies" class="sub-menu__link">technologies</a>
+													<a href="#algorithms" class="sub-menu__link">algorithms</a>
 												</li>
 												<li class="sub-menu__item">
-													<a href="/blog#algorithms" class="sub-menu__link">algorithms</a>
-												</li>
-												<li class="sub-menu__item">
-													<a href="/blog#databases" class="sub-menu__link">databases</a>
-												</li>
+													<a href="#databases" class="sub-menu__link">databases</a>
+												</li> -->
 											</ul>
 										</div>
 									</li>
 									<!-- PROJECTS -->
-									<li class="menu__item">
-										<a href="#" class="menu__link">projects</a>
-									</li>
+									<!-- <li class="menu__item">
+										<a href="#projects" class="menu__link">projects</a>
+									</li> -->
 									<!-- CONTACT -->
 									<li class="menu__item">
-										<a href="#" class="menu__link">contact</a>
+										<a href="#contact" class="menu__link">contact</a>
 									</li>
 								</ul>
-							</div>
+							</nav>
 						</div>
 					</div>
 				</menu>
@@ -110,7 +110,7 @@
 				<main class="content">
 
 					<!-- HOME -->
-					<section id="sectionHome" class="section fullscreen">
+					<section id="home" class="section fullscreen">
 						<div class="section__container">
 							<div class="section__body">
 								<div class="welcome">
@@ -120,7 +120,7 @@
 									<div class="welcome__status">
 										<div class="label label_orange">full stack developer</div>
 									</div>
-									<a href="#about" class="more">
+									<a href="/#about" class="more">
 										<span class="more__text">more</span>
 										<div class="more__arrow">
 											<span class="_icon-arrow"></span>
@@ -135,12 +135,45 @@
 					<!-- ABOUT ME -->
 					<section id="about" class="section">
 						<div class="section__container">
-							<div class="section__body"></div>
+							<div class="section__body">
+								<div class="topic">
+									<div class="topic__title">about me</div>
+									<div class="topic__description">Main information's About Me and what I Love To Do</div>
+								</div>
+								<div class="section__content">
+									<div class="photo">
+										<div class="photo__container">
+											<img src="./img/img.svg" alt="Photo.">
+										</div>
+									</div>
+									<div class="info">
+										<div class="info__title">Hello everybody! I'm Iosif Isachko</div>
+										<div class="info__description">
+											<p>
+												Programmer. I study technologies related to software engineering in depth. I devote most of my time to the WEB
+												direction, in particular, front-end and back-end development. I like to improve and create unique products, learn new
+												technologies and implement them in my projects and share my experience with others. I want to learn how to better write
+												accessible guides on the technologies I've learned, build good libraries and use tests, understand the technologies I
+												learn more deeply, and stick to priorities.
+											</p>
+										</div>
+										<div class="info__about">
+											<div data-title="status" class="info__item">student</div>
+											<div data-title="email" class="info__item">yaiosifua@gmail.com</div>
+											<div data-title="phone" class="info__item">+380930000000</div>
+											<div data-title="address" class="info__item">Kyiv, Ukraine</div>
+										</div>
+										<div class="info__more">
+											<div class="info__btn btn btn_orange">Downland CV</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</section>
 
-					<!-- PHOTO -->
-					<section id="sectionPhoto" class="section fullscreen">
+					<!-- SLIDER -->
+					<section id="slider" class="section fullscreen">
 						<div class="section__container">
 							<div class="section__body"></div>
 						</div>
@@ -149,21 +182,123 @@
 					<!-- SKILLS -->
 					<section id="skills" class="section">
 						<div class="section__container">
-							<div class="section__body"></div>
+							<div class="section__body">
+								<div class="topic">
+									<div class="topic__title">skills</div>
+									<div class="topic__description">Skills proficiency statistics</div>
+								</div>
+								<div class="section__content">
+									<div class="skill">
+										<div class="skill__charter skill__charter_blue">Programming Languages</div>
+										<div class="skill__list">
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+										</div>
+									</div>
+									<div class="skill">
+										<div class="skill__charter skill__charter_orange">Languages</div>
+										<div class="skill__list">
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">English</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Русский</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Український</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</section>
 
 					<!-- EXPERIENCE -->
-					<section id="experience" class="section">
+					<!-- <section id="experience" class="section">
 						<div class="section__container">
 							<div class="section__body"></div>
 						</div>
-					</section>
+					</section> -->
 
 					<!-- WORKS -->
 					<section id="works" class="section">
 						<div class="section__container">
-							<div class="section__body"></div>
+							<div class="section__body">
+								<div class="topic">
+									<div class="topic__title">works</div>
+									<div class="topic__description">Creative work in various areas of programming</div>
+								</div>
+								<div class="section__content">
+									<div class="gallery">
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/test/300x300.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/test/400x300.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/test/300x400.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/gallery/default.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</section>
 
