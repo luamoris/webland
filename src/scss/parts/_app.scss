@@ -1,0 +1,25 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ APP */
+
+.app {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg);
+
+	// .app__container
+	&__container {
+		margin: 0 auto;
+		max-width: $container;
+	}
+
+	// .app__body
+	&__body {
+		width: 100%;
+	}
+
+	// .app__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}

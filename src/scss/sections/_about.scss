@@ -1,0 +1,154 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT */
+
+#about {
+	.content {
+		display: grid;
+		grid-column-gap: 30px;
+		grid-template-columns: 300px minmax(500px, 1fr);
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PHOTO */
+
+.photo {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+
+	// .photo__container
+	&__container {
+		width: 100%;
+		max-height: 400px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INFO */
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+
+	// .info__title
+	&__title {
+		@include adaptive("font-size", 1440, 1024, 36, 26);
+
+		margin: 0 0 10px;
+		width: 100%;
+		font-weight: 600;
+		line-height: 44px;
+		text-align: left;
+		color: var(--text-main-dark);
+	}
+
+	// .info__description
+	&__description {
+		width: 100%;
+	}
+
+	// .info__details
+	&__details {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin: 30px 0;
+		width: 100%;
+
+		// .info__details_item
+		&_item {
+			display: flex;
+			flex: 0 0 22px;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 10px;
+			width: 100%;
+			height: 22px;
+			color: var(--more-color);
+
+			&::before {
+				content: attr(data-title);
+				display: inline-flex;
+				flex: 0 0 80px;
+				width: 80px;
+				text-transform: capitalize;
+				color: var(--text-main-dark);
+			}
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+
+		&_item, &_item::before {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	// .info__more
+	&__more {
+		width: 100%;
+	}
+
+	// .info__btn
+	&__btn {
+		float: left;
+		font-size: 14px;
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA MAX */
+
+@media (max-width: 1024px) {
+	#about {
+		.content {
+			grid-row-gap: 20px;
+			grid-template: minmax(300px, auto) 1fr / 1fr;
+		}
+	}
+
+	.photo {
+		&__container {
+			width: auto;
+			height: 100%;
+
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px), (max-height: 768px) {
+	.info {
+		&__title {
+			@include adaptive("font-size", 768, 320, 26, 16);
+		}
+
+		&__details {
+			margin: 20px 0;
+
+			&_item, &_item::before {
+				@include adaptive("font-size", 768, 320, 16, 12);
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.info {
+		&__btn {
+			font-size: 12px;
+		}
+	}
+}

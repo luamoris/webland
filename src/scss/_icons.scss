@@ -1,0 +1,55 @@
+@font-face {
+	src:
+		url("../fonts/Icon/icons.ttf?d554rk") format("truetype"),
+		url("../fonts/Icon/icons.woff?d554rk") format("woff"),
+		url("../fonts/Icon/icons.svg?d554rk#icons") format("svg");
+	font-family: "pets-icons";
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+	font-family: "pets-icons";
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: never;
+}
+
+.font-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+._icon-arrow::before {
+	content: "\e900";
+}
+
+._icon-codepen::before {
+	content: "\e901";
+}
+
+._icon-favorite::before {
+	content: "\e902";
+}
+
+._icon-github::before {
+	content: "\e903";
+}
+
+._icon-linkedin::before {
+	content: "\e904";
+}
+
+._icon-search::before {
+	content: "\e905";
+}
+
+._icon-telegram::before {
+	content: "\e906";
+}

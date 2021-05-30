@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="UTF-8">
 	<meta name="author" content="Iosif Isachko (@luamoris)">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,415 @@
 </head>
 <body>
 
-<div id="wrapper"></div>
+<!-- SHELL -->
+<div id="wrapper">
+
+	<!-- HEADER -->
+	<div id="header" class="header">
+		<div class="header__container">
+			<div class="header__body">
+				<!-- LOGO -->
+				<div class="logo">
+					<a href="/" class="logo__container">
+						<img src="./img/logo/logo60px.svg" alt="Logo.">
+					</a>
+				</div>
+				<!-- BURGER -->
+				<div class="burger-menu" id="headerMenuBurger"><span></span></div>
+				<!-- MENU -->
+				<menu class="menu">
+					<div class="menu__body">
+						<nav class="menu__navigation">
+							<ul class="menu__list">
+								<!-- HOME -->
+								<li class="menu__item menu_sub_one">
+									<div class="menu_sub_box">
+										<a href="#home" class="menu__link">home</a>
+										<span class="menu__arrow _icon-arrow"></span>
+									</div>
+									<div class="sub-menu sub-menu_one">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#about" class="sub-menu__link">about me</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#works" class="sub-menu__link">works</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#skills" class="sub-menu__link">skills</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<!-- CONTACT -->
+								<li class="menu__item">
+									<a href="#contact" class="menu__link">contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</menu>
+			</div>
+		</div>
+	</div>
+
+	<!-- APP -->
+	<div class="app">
+		<div class="app__container">
+			<div class="app__body">
+
+				<!-- CONTENT -->
+				<main class="app__content">
+
+					<!-- HOME -->
+					<section id="home" class="page page_fullscreen">
+						<div class="page__container">
+							<div class="page__body">
+								<div class="welcome">
+									<div class="welcome__avatar"><img src="./img/logo/logo60px.svg" alt="Avatar."></div>
+									<h1 class="welcome__name">Iosif Isachko</h1>
+									<div class="welcome__line"></div>
+									<div class="welcome__status">
+										<div class="label label_orange">full stack developer</div>
+									</div>
+									<a href="#about" class="more">
+										<span class="more__text">More</span>
+										<div class="more__arrow">
+											<span class="_icon-arrow"></span>
+											<span class="_icon-arrow"></span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- ABOUT ME -->
+					<section id="about" class="page">
+						<div class="page__container">
+							<div class="page__body">
+								<div class="topic">
+									<h1 class="topic__title">About Me</h1>
+									<h3 class="topic__description">Main information's About Me and what I Love To Do</h3>
+								</div>
+								<div class="content">
+									<div class="photo">
+										<div class="photo__container">
+											<img src="./img/img.svg" alt="Photo.">
+										</div>
+									</div>
+									<div class="info">
+										<h1 class="info__title">Hello everybody! I'm Iosif Isachko</h1>
+										<div class="info__description">
+											<p class="paragraph">
+												Programmer. I study technologies related to software engineering in depth. I devote most of my time to the WEB
+												direction, in particular, front-end and back-end development. I like to improve and create unique products, learn new
+												technologies and implement them in my projects and share my experience with others. I want to learn how to better write
+												accessible guides on the technologies I've learned, build good libraries and use tests, understand the technologies I
+												learn more deeply, and stick to priorities.
+											</p>
+										</div>
+										<div class="info__details">
+											<div data-title="status" class="info__details_item">student</div>
+											<div data-title="email" class="info__details_item">yaiosifua@gmail.com</div>
+											<div data-title="phone" class="info__details_item">+380930000000</div>
+											<div data-title="address" class="info__details_item">Kyiv, Ukraine</div>
+										</div>
+										<div class="info__more">
+											<div class="info__btn btn btn_orange">Downland CV</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- WORKS -->
+					<section id="works" class="page">
+						<div class="page__container">
+							<div class="page__body">
+								<div class="topic">
+									<h1 class="topic__title">Works</h1>
+									<h3 class="topic__description">Creative work in various areas of programming</h3>
+								</div>
+								<div class="content">
+									<div class="scan">
+										<div class="scan__container">
+											<div class="scan__body">
+												<form class="form" action="#">
+													<div class="searcher">
+														<div class="searcher__body">
+															<input class="form__input searcher__input" type="text" name="tag" placeholder="Search by tags">
+															<button class="form__button searcher__button" type="submit"><span class="_icon-search"></span></button>
+														</div>
+													</div>
+													<div class="filter">
+														<div class="filter__body">
+															<div class="categories">
+																<div class="categories__topic">
+																	<div class="categories__topic_arrow">
+																		<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				fill="#c0c0c0"
+																				d="M40.8036 14.5833C42.6597 14.5833 43.5892 16.8274 42.2767 18.1398L26.473 33.9435C25.6595 34.7571 24.3403 34.7571 23.5267 33.9435L7.72302 18.1398C6.41058 16.8274 7.3401 14.5833 9.19614 14.5833H24.9999H40.8036Z"
+																			/>
+																		</svg>
+																	</div>
+																	<h3 class="categories__topic_title">Categories</h3>
+																</div>
+																<div class="categories__summary">
+																	<ul class="categories__list">
+																		<li class="categories__list_item">
+																			<input
+																				id="filterJavascript"
+																				class="form__input categories__checkbox_input"
+																				type="checkbox"
+																				name="javascript"
+																				value="javascript"
+																			>
+																			<label for="filterJavascript" class="form__label categories__checkbox_label">javascript</label>
+																		</li>
+																		<li class="categories__list_item">
+																			<input
+																				id="filterPhp"
+																				class="form__input categories__checkbox_input"
+																				type="checkbox"
+																				name="php"
+																				value="php"
+																			>
+																			<label for="filterPhp" class="form__label categories__checkbox_label">php</label>
+																		</li>
+																		<li class="categories__list_item">
+																			<input
+																				id="filterDart"
+																				class="form__input categories__checkbox_input"
+																				type="checkbox"
+																				name="dart"
+																				value="dart"
+																			>
+																			<label for="filterDart" class="form__label categories__checkbox_label">dart</label>
+																		</li>
+
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="sorter">
+														<div class="sorter__body">
+															<div class="sorter__radios">
+																<div class="sorter__radios_item">
+																	<input checked
+																		id="sorterRadioLongStanding"
+																		class="form__input sorter__radios_custom"
+																		type="radio"
+																		name="date"
+																		value="asc"
+																	>
+																	<label for="sorterRadioLongStanding" class="form__label sorter__radios_label">long-standing</label>
+																</div>
+																<div class="sorter__radios_item">
+																	<input checked
+																		id="sorterRadioNewest"
+																		class="form__input sorter__radios_custom"
+																		type="radio"
+																		name="date"
+																		value="desc"
+																	>
+																	<label for="sorterRadioNewest" class="form__label sorter__radios_label">newest</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="gallery">
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/test/300x300.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/test/400x300.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/test/300x400.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+										<div class="card">
+											<div class="card__picture">
+												<img class="card__picture_img" src="./img/gallery/default.svg" alt="Work.">
+											</div>
+											<a href="#" class="card__title">open</a>
+										</div>
+									</div>
+									<div class="pagination">
+										<div class="pagination__container">
+											<div class="pagination__body">
+												<div class="pagination__item pagination__item_arrow-left" data-value="1">
+													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path
+															fill="#c0c0c0"
+															d="M40.8036 14.5833C42.6597 14.5833 43.5892 16.8274 42.2767 18.1398L26.473 33.9435C25.6595 34.7571 24.3403 34.7571 23.5267 33.9435L7.72302 18.1398C6.41058 16.8274 7.3401 14.5833 9.19614 14.5833H24.9999H40.8036Z"
+														/>
+													</svg>
+												</div>
+												<div class="pagination__item pagination__item_number" data-value="1">1</div>
+												<div class="pagination__item pagination__item_number" data-value="2">2</div>
+												<div class="pagination__item pagination__item_current" data-value="3">3</div>
+												<div class="pagination__item pagination__item_number" data-value="4">4</div>
+												<div class="pagination__item pagination__item_number" data-value="5">5</div>
+												<div class="pagination__item pagination__item_arrow-right" data-value="5">
+													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill="#c0c0c0"
+															d="M40.8036 14.5833C42.6597 14.5833 43.5892 16.8274 42.2767 18.1398L26.473 33.9435C25.6595 34.7571 24.3403 34.7571 23.5267 33.9435L7.72302 18.1398C6.41058 16.8274 7.3401 14.5833 9.19614 14.5833H24.9999H40.8036Z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- SKILLS -->
+					<section id="skills" class="page">
+						<div class="page__container">
+							<div class="page__body">
+								<div class="topic">
+									<h1 class="topic__title">Skills</h1>
+									<h3 class="topic__description">Skills proficiency statistics</h3>
+								</div>
+								<div class="content">
+									<div class="skill">
+										<div class="skill__charter skill__charter_blue">Programming Languages</div>
+										<div class="skill__list">
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Javascript</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+										</div>
+									</div>
+									<div class="skill">
+										<div class="skill__charter skill__charter_orange">Languages</div>
+										<div class="skill__list">
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">English</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_orange">
+												<div class="skill__item_title">Русский</div>
+												<div data-value="30" class="skill__item_progress"></div>
+											</div>
+											<div class="skill__item skill__item_blue">
+												<div class="skill__item_title">Український</div>
+												<div data-value="80" class="skill__item_progress"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</main>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__body">
+				<div id="contact" class="contact">
+					<div class="contact__body">
+						<div class="social">
+							<div class="social__body">
+								<a class="social__item" href="https://t.me/I0S1F" target="_blank">
+									<span class="social__item_icon _icon-telegram"></span>
+									<span class="social__item_title">telegram</span>
+								</a>
+								<a class="social__item" href="https://github.com/luamoris" target="_blank">
+									<span class="social__item_icon _icon-github"></span>
+									<span class="social__item_title">github</span>
+								</a>
+								<a class="social__item" href="https://www.linkedin.com/in/iosif-isachko-2631061a7" target="_blank">
+									<span class="social__item_icon _icon-linkedin"></span>
+									<span class="social__item_title">linkedin</span>
+								</a>
+								<a class="social__item" href="https://codepen.io/luamoris/pens/public" target="_blank">
+									<span class="social__item_icon _icon-codepen"></span>
+									<span class="social__item_title">codepen</span>
+								</a>
+							</div>
+						</div>
+						<div class="address">
+							<div class="address__body">
+								<h3 class="address__title">Address: Kyiv, Ukraine</h3>
+								<div class="map">
+									<iframe
+										class="map__frame"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81327.6688054666!2d30.48652405032134!3d50.431979579478316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5dfc458af7%3A0xa6e00aaf7b205d07!2z0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1622412264557!5m2!1sru!2sua"
+										allowfullscreen=""
+										loading="lazy">
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="copyright">Copyright © Iosif Isachko 2021</span>
+	</footer>
+
+</div>
 
 </body>
 </html>

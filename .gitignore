@@ -3,6 +3,7 @@
 /build
 /dist
 /.idea
+/src/test.html
 
 # Prerequisites
 *.d
