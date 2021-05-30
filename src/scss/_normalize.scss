@@ -74,6 +74,13 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+button,
+input {
+	outline: none;
+	border: 0;
+	padding: 0;
+}
+
 textarea {
 	overflow: auto;
 }
@@ -93,8 +100,4 @@ textarea {
 
 *, *::before, *::after {
 	box-sizing: border-box;
-}
-
-button, input {
-	outline: none;
 }

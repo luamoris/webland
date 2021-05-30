@@ -20,11 +20,11 @@
 	&__charter {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		margin-bottom: 40px;
 		border-bottom: 4px solid;
 		border-radius: 5px;
-		padding: 20px 50px;
+		padding: 16px 0;
 		width: 100%;
 		font-weight: 700;
 		font-size: 30px;
@@ -47,7 +47,7 @@
 
 		display: grid;
 		grid-row-gap: 20px;
-		grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+		grid-template-columns: repeat(auto-fit, 150px);
 		width: 100%;
 	}
 
@@ -118,7 +118,7 @@
 @media (max-width: 1024px) {
 	.skill {
 		&__charter {
-			padding: 16px 30px;
+			padding: 12px 0;
 			font-size: 24px;
 		}
 
@@ -136,7 +136,7 @@
 
 		&__charter {
 			margin-bottom: 30px;
-			padding: 10px 20px;
+			padding: 8px 0;
 			font-size: 18px;
 		}
 
@@ -152,18 +152,22 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 520px) {
 	.skill {
-		&__charter {
-			font-size: 16px;
+		&__list {
+			grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+		}
+
+		&__item {
+			width: 135px;
 		}
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
 	.skill {
-		&__item {
-			width: 135px;
+		&__charter {
+			font-size: 16px;
 		}
 	}
 }

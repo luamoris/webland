@@ -42,3 +42,9 @@ const HeaderScrollEffect = () => {
 };
 
 window.addEventListener("scroll", HeaderScrollEffect);
+
+// Filter
+const filter = document.querySelector('.categories__topic');
+filter.addEventListener('click', () => {
+	filter.classList.toggle('summary__open');
+});

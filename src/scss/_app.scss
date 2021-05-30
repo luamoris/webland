@@ -61,6 +61,28 @@
 	--contact-color-hover: rgba(196, 196, 196, 1);
 	--contact-hover: rgba(255, 255, 255, 0.2);
 
+	// pagination
+	--pagination-item-bg: rgba(221, 221, 221, 0.5);
+	--pagination-item-text: rgba(192, 192, 192, 1);
+
+	// pagination current
+	--pagination-item-current-bg: rgba(238, 77, 77, 0.3);
+	--pagination-item-current-text: rgba(238, 77, 77, 0.8);
+
+	// form
+	--form-text: rgba(178, 171, 164, 1);
+	--form-text-placeholder: rgba(178, 171, 164, 0.7);
+	--form-btn-icon: rgba(157, 150, 143, 1);
+
+	// searcher
+	--searcher-bg: rgba(244, 244, 244, 1);
+
+	// input radio
+	--input-item-in: var(--bg);
+	--input-item-in-active: rgba(255, 255, 255, 0.5);
+	--input-item-out: rgba(178, 171, 164, 0.6);
+	--input-item-out-active: rgba(255, 136, 77, 0.7);
+
 	// img
 	--btn-sub-menu: url("../img/menu/btn_sub_menu.svg");
 }

@@ -180,6 +180,98 @@
 									<div class="topic__description">Creative work in various areas of programming</div>
 								</div>
 								<div class="section__content">
+									<div class="scan">
+										<div class="scan__container">
+											<div class="scan__body">
+												<form class="form" action="#">
+													<div class="searcher">
+														<div class="searcher__body">
+															<input class="form__input searcher__input" type="text" name="tag" placeholder="Search by tags">
+															<button class="form__button searcher__button" type="submit"><span class="_icon-search"></span></button>
+														</div>
+													</div>
+													<div class="filter">
+														<div class="filter__body">
+															<div class="categories">
+																<div class="categories__topic">
+																	<div class="categories__topic_arrow">
+																		<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				fill="#c0c0c0"
+																				d="M40.8036 14.5833C42.6597 14.5833 43.5892 16.8274 42.2767 18.1398L26.473 33.9435C25.6595 34.7571 24.3403 34.7571 23.5267 33.9435L7.72302 18.1398C6.41058 16.8274 7.3401 14.5833 9.19614 14.5833H24.9999H40.8036Z"
+																			/>
+																		</svg>
+																	</div>
+																	<h3 class="categories__topic_title">Categories</h3>
+																</div>
+																<div class="categories__summary">
+																	<ul class="categories__list">
+																		<li class="categories__list_item">
+																			<input
+																				id="filterJavascript"
+																				class="form__input categories__checkbox_input"
+																				type="checkbox"
+																				name="javascript"
+																				value="javascript"
+																			>
+																			<label for="filterJavascript" class="form__label categories__checkbox_label">javascript</label>
+																		</li>
+																		<li class="categories__list_item">
+																			<input
+																				id="filterPhp"
+																				class="form__input categories__checkbox_input"
+																				type="checkbox"
+																				name="php"
+																				value="php"
+																			>
+																			<label for="filterPhp" class="form__label categories__checkbox_label">php</label>
+																		</li>
+																		<li class="categories__list_item">
+																			<input
+																				id="filterDart"
+																				class="form__input categories__checkbox_input"
+																				type="checkbox"
+																				name="dart"
+																				value="dart"
+																			>
+																			<label for="filterDart" class="form__label categories__checkbox_label">dart</label>
+																		</li>
+
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="sorter">
+														<div class="sorter__body">
+															<div class="sorter__radios">
+																<div class="sorter__radios_item">
+																	<input checked
+																		id="sorterRadioLongStanding"
+																		class="form__input sorter__radios_custom"
+																		type="radio"
+																		name="date"
+																		value="asc"
+																	>
+																	<label for="sorterRadioLongStanding" class="form__label sorter__radios_label">long-standing</label>
+																</div>
+																<div class="sorter__radios_item">
+																	<input checked
+																		id="sorterRadioNewest"
+																		class="form__input sorter__radios_custom"
+																		type="radio"
+																		name="date"
+																		value="desc"
+																	>
+																	<label for="sorterRadioNewest" class="form__label sorter__radios_label">newest</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
 									<div class="gallery">
 										<div class="card">
 											<div class="card__picture">
@@ -204,6 +296,31 @@
 												<img class="card__picture_img" src="./img/gallery/default.svg" alt="Work.">
 											</div>
 											<a href="#" class="card__title">open</a>
+										</div>
+									</div>
+									<div class="pagination">
+										<div class="pagination__container">
+											<div class="pagination__body">
+												<div class="pagination__item pagination__item_arrow-left" data-value="1">
+													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path
+															fill="#c0c0c0"
+															d="M40.8036 14.5833C42.6597 14.5833 43.5892 16.8274 42.2767 18.1398L26.473 33.9435C25.6595 34.7571 24.3403 34.7571 23.5267 33.9435L7.72302 18.1398C6.41058 16.8274 7.3401 14.5833 9.19614 14.5833H24.9999H40.8036Z"
+														/>
+													</svg>
+												</div>
+												<div class="pagination__item pagination__item_number" data-value="1">1</div>
+												<div class="pagination__item pagination__item_number" data-value="2">2</div>
+												<div class="pagination__item pagination__item_current" data-value="3">3</div>
+												<div class="pagination__item pagination__item_number" data-value="4">4</div>
+												<div class="pagination__item pagination__item_number" data-value="5">5</div>
+												<div class="pagination__item pagination__item_arrow-right" data-value="5">
+													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill="#c0c0c0"
+															d="M40.8036 14.5833C42.6597 14.5833 43.5892 16.8274 42.2767 18.1398L26.473 33.9435C25.6595 34.7571 24.3403 34.7571 23.5267 33.9435L7.72302 18.1398C6.41058 16.8274 7.3401 14.5833 9.19614 14.5833H24.9999H40.8036Z" />
+													</svg>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -288,11 +405,11 @@
 					</section>
 
 					<!-- SLIDER -->
-					<section id="slider" class="section fullscreen">
+					<!-- <section id="slider" class="section fullscreen">
 						<div class="section__container">
 							<div class="section__body"></div>
 						</div>
-					</section>
+					</section> -->
 
 					<!-- EXPERIENCE -->
 					<!-- <section id="experience" class="section">
