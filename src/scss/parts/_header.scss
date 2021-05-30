@@ -6,14 +6,14 @@
 	top: 0;
 	z-index: 100;
 	width: 100%;
-	background: var(--header-line);
-	transition: transform 300ms ease;
+	background-color: var(--header-bg);
 
 	// .header__container
 	&__container {
 		margin: 0 auto;
 		padding: 16px 32px;
-		max-width: 1270px;
+		max-width: $container;
+		background-color: var(--header-bg);
 	}
 
 	// .header__body
@@ -24,23 +24,23 @@
 		width: 100%;
 		height: 50px;
 	}
-
-	// .header_out
-	&._out {
-		transform: translateY(-100%);
-	}
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOGO */
 
 .logo {
 	position: relative;
 	z-index: 101;
 	flex: 0 0 60px;
 	margin-right: 40px;
+	width: 60px;
+	height: 60px;
+	transform: translateY(2px);
 
-	// .logo__picture
-	&__picture {
-		width: 60px;
-		height: 60px;
+	// .logo__container
+	&__container {
+		width: 100%;
+		height: 100%;
 
 		img {
 			width: 100%;
@@ -48,6 +48,58 @@
 		}
 	}
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BURGER MENU */
+
+.burger-menu {
+	position: relative;
+	z-index: 101;
+	display: none;
+	width: 40px;
+	height: 28px;
+	cursor: pointer;
+
+	&::before, &::after, span {
+		position: absolute;
+		border-radius: 2px;
+		width: 100%;
+		height: 3px;
+		background-color: var(--text-main-dark);
+		transition: transform 200ms ease;
+	}
+
+	&::before, &::after {
+		content: "";
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	span {
+		top: 13px;
+	}
+}
+
+.burger-menu.active {
+	&::before {
+		transform: translateY(13px) rotate(-45deg);
+	}
+
+	&::after {
+		transform: translateY(-13px) rotate(45deg);
+	}
+
+	span {
+		transform: rotateY(90deg);
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MENU */
 
 .menu {
 	height: 100%;
@@ -60,6 +112,16 @@
 	// .menu_sub_box
 	&_sub_box {
 		display: flex;
+		height: 100%;
+	}
+
+	// .menu__body
+	&__body {
+		height: 100%;
+	}
+
+	// .menu__navigation
+	&__navigation {
 		height: 100%;
 	}
 
@@ -79,8 +141,9 @@
 		height: 20px;
 	}
 
+	// .menu__link
 	&__link {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: flex-start;
 		height: 100%;
@@ -94,72 +157,20 @@
 	// .menu__arrow
 	&__arrow {
 		display: none;
+		align-items: center;
+		justify-content: center;
 		margin-left: 5px;
 		width: 15px;
 		height: 20px;
-		background: var(--btn-sub-menu) center center/15px auto no-repeat;
-	}
-
-	// .menu__burger
-	&__burger {
-		position: relative;
-		z-index: 101;
-		display: none;
-		width: 40px;
-		height: 28px;
-		cursor: pointer;
-
-		&::before, &::after, span {
-			position: absolute;
-			border-radius: 2px;
-			width: 100%;
-			height: 3px;
-			background-color: var(--main-bold);
-			transition: transform 200ms ease;
-		}
-
-		&::before, &::after {
-			content: "";
-		}
-
-		&::before {
-			top: 0;
-		}
-
-		&::after {
-			bottom: 0;
-		}
-
-		span {
-			top: 13px;
-		}
-	}
-
-	&__burger.active {
-		&::before {
-			transform: translateY(13px) rotate(-45deg);
-		}
-
-		&::after {
-			transform: translateY(-13px) rotate(45deg);
-		}
-
-		span {
-			transform: rotateY(90deg);
-		}
-	}
-
-	// .menu__box
-	&__box, &__container, &__content {
-		height: 100%;
+		font-size: 20px;
+		color: var(--menu-text);
 	}
 }
 
 body.touch .menu {
-	// .menu_sub_one
 	&_sub_one {
 		.menu__arrow {
-			display: block;
+			display: flex;
 			transition: transform 150ms;
 
 			&.active {
@@ -176,7 +187,6 @@ body.touch .menu {
 }
 
 body.mouse .menu {
-	// .menu_sub_one
 	&_sub_one {
 		&:hover {
 			.sub-menu {
@@ -186,10 +196,13 @@ body.mouse .menu {
 	}
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SUB MENU */
+
 .sub-menu {
 	position: absolute;
 	display: none;
 
+	// .sub-menu_one
 	&_one {
 		left: 0;
 		top: 15px;
@@ -203,7 +216,7 @@ body.mouse .menu {
 			border-radius: 5px;
 			padding: 15px 0;
 			box-shadow: 0 4px 4px var(--sub-menu-shadow);
-			background: var(--bg);
+			background-color: var(--bg);
 		}
 
 		.sub-menu__item {
@@ -211,6 +224,7 @@ body.mouse .menu {
 			flex: 0 0 24px;
 			align-items: center;
 			width: 140px;
+			height: 24px;
 
 			&:hover {
 				background-color: var(--sub-menu-item-bg);
@@ -231,6 +245,8 @@ body.mouse .menu {
 	}
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA MAX */
+
 @media (max-width: 768px) {
 	.header {
 		&__body {
@@ -242,46 +258,41 @@ body.mouse .menu {
 		}
 	}
 
+	.burger-menu {
+		display: block;
+	}
+
 	.menu {
-		position: relative;
-		height: auto;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		min-height: 100vh;
+		background-color: var(--bg);
+		transform: translateY(-100%);
+		transition: transform 300ms ease;
 
-		&__burger {
-			display: block;
-		}
-
-		&_sub_box {
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-		}
-
-		&__box {
-			position: fixed;
-			left: 0;
-			top: 0;
-			z-index: -1;
-			overflow: hidden;
-			width: 100%;
-			height: 100%;
-			min-height: 100vh;
-			background-color: var(--bg);
-			transform: translateY(-100%);
-			transition: transform 300ms ease;
-		}
-
-		&__container {
+		&__body {
 			margin-top: 90px;
 			padding: 20px 10px;
 			width: 100%;
 			height: calc(100% - 90px);
 		}
 
-		&__content {
+		&__navigation {
 			overflow-x: hidden;
 			overflow-y: auto;
 			width: 100%;
 			height: 100%;
+		}
+
+		&_sub_box {
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
 		}
 
 		&__list {
@@ -296,7 +307,7 @@ body.mouse .menu {
 			align-items: flex-start;
 			justify-content: flex-start;
 			margin: 10px 0;
-			padding: 0 32px;
+			padding: 0 16px;
 			width: 100%;
 			height: auto;
 			min-height: 20px;
@@ -304,16 +315,10 @@ body.mouse .menu {
 	}
 
 	.menu.burger_open {
-		.menu__list {
-			opacity: 1;
-		}
-
-		.menu__box {
-			transform: translateY(0);
-		}
+		transform: translateY(0);
 	}
 
-	body.burger_open {
+	.body.burger_open {
 		overflow: hidden;
 	}
 
@@ -333,10 +338,7 @@ body.mouse .menu {
 @media (max-width: 425px) {
 	.logo {
 		flex: 0 0 50px;
-
-		&__picture {
-			width: 50px;
-			height: 50px;
-		}
+		width: 50px;
+		height: 50px;
 	}
 }

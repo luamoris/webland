@@ -1,23 +1,43 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER */
+
+.footer {
+	margin-top: 50px;
+	width: 100%;
+	background-color: var(--footer-bg);
+
+	// .footer__container
+	&__container {
+		margin: 0 auto;
+		padding: 30px 0 0;
+		max-width: $container;
+	}
+
+	// .footer__body
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT */
 
 .contact {
 	width: 100%;
-
-	// .contact__container
-	&__container {
-		margin: 0 auto;
-		padding: 0 15px 30px;
-		max-width: 1270px;
-	}
 
 	// .contact__body
 	&__body {
 		display: flex;
 		align-items: flex-start;
 		justify-content: flex-start;
+		padding: 0 15px 30px;
 		width: 100%;
 	}
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SOCIAL */
 
 .social {
 	flex: 0 0;
@@ -72,7 +92,9 @@
 	}
 }
 
-.map {
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ADDRESS */
+
+.address {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -80,21 +102,13 @@
 	padding: 5px 10px;
 	width: 100%;
 
-	// .map__body
+	// .address__body
 	&__body {
 		width: 100%;
 	}
 
-	// .map__frame
-	&__frame {
-		overflow: hidden;
-		border-radius: 5px;
-		width: 100%;
-		height: 300px;
-	}
-
-	// .map__address
-	&__address {
+	// .address__title
+	&__title {
 		margin: 0 0 10px;
 		font-weight: 800;
 		font-size: 14px;
@@ -102,14 +116,40 @@
 	}
 }
 
+.map {
+	overflow: hidden;
+	border-radius: 5px;
+	width: 100%;
+	height: 300px;
+
+	// .map__frame
+	&__frame {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ COPYRIGHT */
+
+.copyright {
+	display: block;
+	padding: 5px 20px;
+	width: 100%;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 14px;
+	text-align: center;
+	color: var(--footer-text);
+	background-color: var(--footer-bg-black);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA */
+
 @media (max-width: 768px) {
 	.contact {
-		&__container {
-			padding: 0 5px 10px;
-		}
-
 		&__body {
 			flex-direction: column;
+			padding: 0 5px 10px;
 		}
 	}
 
@@ -131,8 +171,8 @@
 		}
 	}
 
-	.map {
-		&__address {
+	.address {
+		&__title {
 			font-size: 12px;
 		}
 	}

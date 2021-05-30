@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="UTF-8">
 	<meta name="author" content="Iosif Isachko (@luamoris)">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,90 +14,53 @@
 <div id="wrapper">
 
 	<!-- HEADER -->
-	<header class="header" id="header">
+	<div id="header" class="header">
 		<div class="header__container">
 			<div class="header__body">
-
 				<!-- LOGO -->
 				<div class="logo">
-					<a href="/" class="logo__picture">
-						<img src="./img/logo/logo60px.svg" alt="Logo">
+					<a href="/" class="logo__container">
+						<img src="./img/logo/logo60px.svg" alt="Logo.">
 					</a>
 				</div>
-
+				<!-- BURGER -->
+				<div class="burger-menu" id="headerMenuBurger"><span></span></div>
 				<!-- MENU -->
 				<menu class="menu">
-					<!-- BURGER -->
-					<div class="menu__burger" id="headerMenuBurger"><span></span></div>
-					<!-- MENU BOX -->
-					<div class="menu__box">
-						<div class="menu__container">
-							<nav class="menu__content">
-								<ul class="menu__list">
-									<!-- HOME -->
-									<li class="menu__item menu_sub_one">
-										<div class="menu_sub_box">
-											<a href="#home" class="menu__link">home</a>
-											<span class="menu__arrow"></span>
-										</div>
-										<!-- SUB HOME -->
-										<div class="sub-menu sub-menu_one">
-											<ul class="sub-menu__list">
-												<li class="sub-menu__item">
-													<a href="#about" class="sub-menu__link">about me</a>
-												</li>
-												<li class="sub-menu__item">
-													<a href="#skills" class="sub-menu__link">skills</a>
-												</li>
-												<!-- <li class="sub-menu__item">
-													<a href="#experience" class="sub-menu__link">experience</a>
-												</li> -->
-												<li class="sub-menu__item">
-													<a href="#works" class="sub-menu__link">works</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<!-- BLOG -->
-									<!-- <li class="menu__item menu_sub_one">
-										<div class="menu_sub_box">
-											<a href="#languages" class="menu__link">blog</a>
-											<span class="menu__arrow"></span>
-										</div>
-										<div class="sub-menu sub-menu_one">
-											<ul class="sub-menu__list">
-												<li class="sub-menu__item">
-													<a href="#languages" class="sub-menu__link">languages</a>
-												</li>
-												<li class="sub-menu__item">
-													<a href="#technologies" class="sub-menu__link">technologies</a>
-												</li>
-												<li class="sub-menu__item">
-													<a href="#algorithms" class="sub-menu__link">algorithms</a>
-												</li>
-												<li class="sub-menu__item">
-													<a href="#databases" class="sub-menu__link">databases</a>
-												</li>
-											</ul>
-										</div>
-									</li> -->
-									<!-- PROJECTS -->
-									<!-- <li class="menu__item">
-										<a href="#projects" class="menu__link">projects</a>
-									</li> -->
-									<!-- CONTACT -->
-									<li class="menu__item">
-										<a href="#contact" class="menu__link">contact</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
+					<div class="menu__body">
+						<nav class="menu__navigation">
+							<ul class="menu__list">
+								<!-- HOME -->
+								<li class="menu__item menu_sub_one">
+									<div class="menu_sub_box">
+										<a href="#home" class="menu__link">home</a>
+										<span class="menu__arrow _icon-arrow"></span>
+									</div>
+									<div class="sub-menu sub-menu_one">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#about" class="sub-menu__link">about me</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#works" class="sub-menu__link">works</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#skills" class="sub-menu__link">skills</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<!-- CONTACT -->
+								<li class="menu__item">
+									<a href="#contact" class="menu__link">contact</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</menu>
-
 			</div>
 		</div>
-	</header>
+	</div>
 
 	<!-- APP -->
 	<div class="app">
@@ -106,21 +68,21 @@
 			<div class="app__body">
 
 				<!-- CONTENT -->
-				<main class="content">
+				<main class="app__content">
 
 					<!-- HOME -->
-					<section id="home" class="section fullscreen">
-						<div class="section__container">
-							<div class="section__body">
+					<section id="home" class="page page_fullscreen">
+						<div class="page__container">
+							<div class="page__body">
 								<div class="welcome">
 									<div class="welcome__avatar"><img src="./img/logo/logo60px.svg" alt="Avatar."></div>
-									<div class="welcome__name">Iosif Isachko</div>
+									<h1 class="welcome__name">Iosif Isachko</h1>
 									<div class="welcome__line"></div>
 									<div class="welcome__status">
 										<div class="label label_orange">full stack developer</div>
 									</div>
-									<a href="/#about" class="more">
-										<span class="more__text">more</span>
+									<a href="#about" class="more">
+										<span class="more__text">More</span>
 										<div class="more__arrow">
 											<span class="_icon-arrow"></span>
 											<span class="_icon-arrow"></span>
@@ -132,23 +94,23 @@
 					</section>
 
 					<!-- ABOUT ME -->
-					<section id="about" class="section">
-						<div class="section__container">
-							<div class="section__body">
+					<section id="about" class="page">
+						<div class="page__container">
+							<div class="page__body">
 								<div class="topic">
-									<div class="topic__title">about me</div>
-									<div class="topic__description">Main information's About Me and what I Love To Do</div>
+									<h1 class="topic__title">About Me</h1>
+									<h3 class="topic__description">Main information's About Me and what I Love To Do</h3>
 								</div>
-								<div class="section__content">
+								<div class="content">
 									<div class="photo">
 										<div class="photo__container">
 											<img src="./img/img.svg" alt="Photo.">
 										</div>
 									</div>
 									<div class="info">
-										<div class="info__title">Hello everybody! I'm Iosif Isachko</div>
+										<h1 class="info__title">Hello everybody! I'm Iosif Isachko</h1>
 										<div class="info__description">
-											<p>
+											<p class="paragraph">
 												Programmer. I study technologies related to software engineering in depth. I devote most of my time to the WEB
 												direction, in particular, front-end and back-end development. I like to improve and create unique products, learn new
 												technologies and implement them in my projects and share my experience with others. I want to learn how to better write
@@ -156,11 +118,11 @@
 												learn more deeply, and stick to priorities.
 											</p>
 										</div>
-										<div class="info__about">
-											<div data-title="status" class="info__item">student</div>
-											<div data-title="email" class="info__item">yaiosifua@gmail.com</div>
-											<div data-title="phone" class="info__item">+380930000000</div>
-											<div data-title="address" class="info__item">Kyiv, Ukraine</div>
+										<div class="info__details">
+											<div data-title="status" class="info__details_item">student</div>
+											<div data-title="email" class="info__details_item">yaiosifua@gmail.com</div>
+											<div data-title="phone" class="info__details_item">+380930000000</div>
+											<div data-title="address" class="info__details_item">Kyiv, Ukraine</div>
 										</div>
 										<div class="info__more">
 											<div class="info__btn btn btn_orange">Downland CV</div>
@@ -172,14 +134,14 @@
 					</section>
 
 					<!-- WORKS -->
-					<section id="works" class="section">
-						<div class="section__container">
-							<div class="section__body">
+					<section id="works" class="page">
+						<div class="page__container">
+							<div class="page__body">
 								<div class="topic">
-									<div class="topic__title">works</div>
-									<div class="topic__description">Creative work in various areas of programming</div>
+									<h1 class="topic__title">Works</h1>
+									<h3 class="topic__description">Creative work in various areas of programming</h3>
 								</div>
-								<div class="section__content">
+								<div class="content">
 									<div class="scan">
 										<div class="scan__container">
 											<div class="scan__body">
@@ -329,14 +291,14 @@
 					</section>
 
 					<!-- SKILLS -->
-					<section id="skills" class="section">
-						<div class="section__container">
-							<div class="section__body">
+					<section id="skills" class="page">
+						<div class="page__container">
+							<div class="page__body">
 								<div class="topic">
-									<div class="topic__title">skills</div>
-									<div class="topic__description">Skills proficiency statistics</div>
+									<h1 class="topic__title">Skills</h1>
+									<h3 class="topic__description">Skills proficiency statistics</h3>
 								</div>
-								<div class="section__content">
+								<div class="content">
 									<div class="skill">
 										<div class="skill__charter skill__charter_blue">Programming Languages</div>
 										<div class="skill__list">
@@ -404,69 +366,57 @@
 						</div>
 					</section>
 
-					<!-- SLIDER -->
-					<!-- <section id="slider" class="section fullscreen">
-						<div class="section__container">
-							<div class="section__body"></div>
-						</div>
-					</section> -->
-
-					<!-- EXPERIENCE -->
-					<!-- <section id="experience" class="section">
-						<div class="section__container">
-							<div class="section__body"></div>
-						</div>
-					</section> -->
-
 				</main>
-
-				<!-- FOOTER -->
-				<footer class="footer">
-					<div class="footer__container">
-						<div class="footer__body">
-							<div id="contact" class="contact">
-								<div class="contact__container">
-									<div class="contact__body">
-										<div class="social">
-											<div class="social__body">
-												<a class="social__item" href="https://t.me/I0S1F" target="_blank">
-													<span class="social__item_icon _icon-telegram"></span>
-													<span class="social__item_title">telegram</span>
-												</a>
-												<a class="social__item" href="https://github.com/luamoris" target="_blank">
-													<span class="social__item_icon _icon-github"></span>
-													<span class="social__item_title">github</span>
-												</a>
-												<a class="social__item" href="https://www.linkedin.com/in/iosif-isachko-2631061a7" target="_blank">
-													<span class="social__item_icon _icon-linkedin"></span>
-													<span class="social__item_title">linkedin</span>
-												</a>
-												<a class="social__item" href="https://codepen.io/luamoris/pens/public" target="_blank">
-													<span class="social__item_icon _icon-codepen"></span>
-													<span class="social__item_title">codepen</span>
-												</a>
-											</div>
-										</div>
-										<div class="map">
-											<div class="map__body">
-												<h3 class="map__address">Address: Kyiv, Ukraine</h3>
-												<iframe class="map__frame"
-													src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d23504.741352954003!2d35.47958542547373!3d38.72238725252775!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617122558254!5m2!1sru!2sua"
-													allowfullscreen="" loading="lazy">
-												</iframe>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<span class="copyright">Copyright © Iosif Isachko 2021</span>
-						</div>
-					</div>
-				</footer>
 
 			</div>
 		</div>
 	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__body">
+				<div id="contact" class="contact">
+					<div class="contact__body">
+						<div class="social">
+							<div class="social__body">
+								<a class="social__item" href="https://t.me/I0S1F" target="_blank">
+									<span class="social__item_icon _icon-telegram"></span>
+									<span class="social__item_title">telegram</span>
+								</a>
+								<a class="social__item" href="https://github.com/luamoris" target="_blank">
+									<span class="social__item_icon _icon-github"></span>
+									<span class="social__item_title">github</span>
+								</a>
+								<a class="social__item" href="https://www.linkedin.com/in/iosif-isachko-2631061a7" target="_blank">
+									<span class="social__item_icon _icon-linkedin"></span>
+									<span class="social__item_title">linkedin</span>
+								</a>
+								<a class="social__item" href="https://codepen.io/luamoris/pens/public" target="_blank">
+									<span class="social__item_icon _icon-codepen"></span>
+									<span class="social__item_title">codepen</span>
+								</a>
+							</div>
+						</div>
+						<div class="address">
+							<div class="address__body">
+								<h3 class="address__title">Address: Kyiv, Ukraine</h3>
+								<div class="map">
+									<iframe
+										class="map__frame"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81327.6688054666!2d30.48652405032134!3d50.431979579478316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5dfc458af7%3A0xa6e00aaf7b205d07!2z0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1622412264557!5m2!1sru!2sua"
+										allowfullscreen=""
+										loading="lazy">
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="copyright">Copyright © Iosif Isachko 2021</span>
+	</footer>
 
 </div>
 

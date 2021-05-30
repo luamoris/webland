@@ -1,0 +1,115 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PAGE */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PAGE */
+
+.page {
+	flex: 1 1;
+	width: 100%;
+
+	// .page__container
+	&__container {
+		padding: 100px 100px 0;
+		width: 100%;
+	}
+
+	// .page__body
+	&__body {
+		width: 100%;
+	}
+}
+
+.page_fullscreen {
+	height: 100vh;
+	min-height: 100vh;
+
+	.page__container {
+		height: 100%;
+	}
+
+	.page__body {
+		height: 100%;
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPIC */
+
+.topic {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+	width: 100%;
+
+	// .topic__title
+	&__title {
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-size: 50px;
+		text-transform: capitalize;
+		color: var(--topic-title);
+	}
+
+	// .topic__description
+	&__description {
+		font-weight: 600;
+		font-size: 18px;
+		color: var(--topic-description);
+	}
+}
+
+.content {
+	margin-bottom: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA MIN */
+
+@media (min-width: 1024px) {
+	.page {
+		min-height: 100vh;
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA MAX */
+
+@media (max-width: 1024px) {
+	.page {
+		&__container {
+			padding: 100px 32px 0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.page {
+		&__container {
+			padding: 80px 15px 0;
+		}
+	}
+
+	.topic {
+		margin-bottom: 30px;
+
+		&__title {
+			font-size: 36px;
+		}
+
+		&__description {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.topic {
+		margin-bottom: 20px;
+
+		&__title {
+			font-size: 22px;
+		}
+
+		&__description {
+			font-size: 10px;
+		}
+	}
+}

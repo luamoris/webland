@@ -1,13 +1,15 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ SKILLS */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SKILLS */
 
 #skills {
-	.section__content {
+	.content {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		width: 100%;
 	}
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SKILL */
 
 .skill {
 	display: flex;
@@ -114,6 +116,8 @@
 		margin: 0;
 	}
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA MAX */
 
 @media (max-width: 1024px) {
 	.skill {

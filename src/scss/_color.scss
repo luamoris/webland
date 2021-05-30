@@ -1,0 +1,97 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ROOT */
+
+:root {
+	--bg: rgba(255, 255, 255, 1);
+	--selection: rgba(0, 0, 0, 0.1);
+
+	// text
+	--text-main-dark: #867564; // --main-bold
+	--text-main-lite: #9f978e; // --main
+	--text-decoration: #6a543f; // --main-black
+
+	// line
+	--line-decoration: rgba(231, 187, 101, 1); // --line-bold
+
+	// label
+	--label-orange-bg: rgba(231, 187, 101, 0.2);
+	--label-orange-text: rgba(231, 187, 101, 1);
+
+	// button orange
+	--button-orange-bg: #faf1e0;
+	--button-orange-bg-hover: rgba(231, 187, 101, 0.1);
+	--button-orange-text: #e7bb65;
+
+	// --label-orange-bg-hover: rgba(231, 187, 101, 0.1);
+
+	// more
+	--more-color: #b9b9b9; // --more-text
+
+	// pagination
+	--pagination-item-bg: rgba(221, 221, 221, 0.5);
+	--pagination-item-text: rgba(192, 192, 192, 1);
+
+	// pagination current
+	--pagination-item-current-bg: rgba(238, 77, 77, 0.3);
+	--pagination-item-current-text: rgba(238, 77, 77, 0.8);
+
+	// topic
+	--topic-title: #877d72;
+	--topic-description: rgba(196, 196, 196, 1);
+
+	// works item
+	--works-item-bg: rgba(247, 221, 170, 1);
+
+	// form
+	--form-text: rgba(178, 171, 164, 1);
+	--form-text-placeholder: rgba(178, 171, 164, 0.7);
+	--form-btn-icon: rgba(157, 150, 143, 1);
+
+	// form searcher
+	--searcher-bg: rgba(244, 244, 244, 1);
+
+	// form input radio
+	--input-item-in: var(--bg);
+	--input-item-in-active: rgba(255, 255, 255, 0.5);
+	--input-item-out: rgba(178, 171, 164, 0.6);
+	--input-item-out-active: rgba(255, 136, 77, 0.7);
+
+	// skill
+	--skill-chapter-blue-bg: rgba(43, 65, 88, 0.1);
+	--skill-chapter-blue-text: rgba(43, 65, 88, 0.8);
+	--skill-chapter-orange-bg: rgba(255, 136, 77, 0.1);
+	--skill-chapter-orange-text: rgba(255, 136, 77, 0.8);
+
+	// skill item bar
+	--skill-item-bar: rgba(0, 0, 0, 0.1);
+
+	// skill item blue
+	--skill-item-blue-bg: rgba(244, 245, 247, 1);
+	--skill-item-blue-text: rgba(140, 140, 140, 1);
+	--skill-item-blue-progress: rgba(81, 99, 118, 0.7);
+
+	// skill item orange
+	--skill-item-orange-bg: rgba(251, 236, 208, 1);
+	--skill-item-orange-text: rgba(106, 84, 63, 0.8);
+	--skill-item-orange-progress: rgba(233, 166, 72, 0.7);
+
+	// footer
+	--footer-bg: rgba(51, 51, 51, 1);
+	--footer-bg-black: rgba(255, 255, 255, 0.1);
+	--footer-text: rgba(196, 196, 196, 1);
+
+	// footer contact
+	--contact-color: rgba(196, 196, 196, 0.8);
+	--contact-color-hover: rgba(196, 196, 196, 1);
+	--contact-hover: rgba(255, 255, 255, 0.2);
+
+	// header
+	--header-bg: rgba(253, 248, 238, 1);
+
+	// header menu
+	--menu-text: #695d4f;
+
+	// header sub menu
+	--sub-menu-text: #8c8c8c;
+	--sub-menu-item-bg: rgba(105, 93, 79, 0.1);
+	--sub-menu-shadow: rgba(105, 93, 79, 0.25);
+}
