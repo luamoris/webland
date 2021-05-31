@@ -1,0 +1,15 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ mixin
+
+@mixin adaptive($property, $startWidth, $endWidth, $maxValue, $minValue) {
+	#{$property}: $maxValue + px;
+
+	$ratio: #{$maxValue - $minValue};
+
+	@media (max-width: #{$startWidth + px}) {
+		#{$property}: calc(#{$minValue + px} + #{$ratio} * ((100vw - #{$endWidth + px}) / (#{$startWidth - $endWidth})));
+	}
+
+	@media (max-width: #{$endWidth + px}) {
+		#{$property}: $minValue + px;
+	}
+}
