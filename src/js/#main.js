@@ -62,10 +62,10 @@ form.addEventListener('submit', (event) => {
 	if (searcherInput.value) {
 		const tags = searcherInput.value.split(' ');
 		works.applyFilterTags(tags);
-		form.reset();
 	} else {
 		works.applyFilterTags();
 	}
+	form.reset();
 });
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SORTER
@@ -89,7 +89,6 @@ const filterTopic = document.querySelector('.categories__topic');
 const filterCheckboxes = filter.querySelectorAll('input[type="checkbox"]');
 filterCheckboxes.forEach((checkbox) => {
 	checkbox.addEventListener('change', () => {
-		console.log(1);
 		if (checkbox.checked) {
 			categories[checkbox.value] = true;
 		} else {
