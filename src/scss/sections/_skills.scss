@@ -82,15 +82,14 @@
 			border-radius: 50px;
 			width: 100%;
 			background-color: var(--skill-item-bar);
+		}
 
-			&::before {
-				content: "";
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 80%;
-				height: 100%;
-			}
+		&_value {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 100%;
 		}
 
 		&_blue {
@@ -103,11 +102,11 @@
 			background-color: var(--skill-item-orange-bg);
 		}
 
-		&_blue &_progress::before {
+		&_blue &_value {
 			background-color: var(--skill-item-blue-progress);
 		}
 
-		&_orange &_progress::before {
+		&_orange &_value {
 			background-color: var(--skill-item-orange-progress);
 		}
 	}
