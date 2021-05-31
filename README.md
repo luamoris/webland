@@ -12,6 +12,8 @@
 [live-site]: https://luamoris.github.io/webland/
 
 
+<img src="./content/main.svg">
+
 
 ### Prerequisites
 
