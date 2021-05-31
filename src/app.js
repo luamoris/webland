@@ -1,7 +1,7 @@
-// ====================================================================================== Import
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Import
 
 /* Style */
-import './scss/style.scss';
+import './scss/#style.scss';
 
 /* Script */
-import './js/lazy_loading';
+import './js/#main';
